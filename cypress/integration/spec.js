@@ -3,12 +3,12 @@ describe('page', () => {
     });
 
     it('location.replace', () => {
-        window.location.replace("");
+        cy.visit("http://localhost/~rjulius/cypress/index.html");
+        cy.get("#button1").click();
     })
 
     it('location.replace promise', () => {
-      setTimeout(() =>{
-          window.location.replace("");
-      });
+    cy.visit("http://localhost/~rjulius/cypress/index.html");
+      cy.get("#button2").click();
     })
 })

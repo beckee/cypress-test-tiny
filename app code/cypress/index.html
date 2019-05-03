@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Hello World | Foo</title>
+<script>
+function navSimple(){
+	window.location.replace("foo/index.html");
+}
+function navOnPromise(){
+	setTimeout(() =>{
+          window.location.replace("foo/index.html");
+      });
+}
+</script>
+</head>
+<body>
+<h1>Hello World!</h1>
+<p> Welcome to <strong>Cypress Test</strong></p>
+<button id="button1" onclick="navSimple()">Button 1</button>
+<button id="button2" onclick="navOnPromise()">Button 2</button>
+</body>
+</html>
